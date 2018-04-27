@@ -7,21 +7,10 @@
 @deps:   <None>
 @desc:   Assignment 1b, 1c and 1d
 """
-
+#Define Calculations
 def partB():
     print('Part B - Add, Subtract or Multiply two numbers')
-    
-    #Define Functions
-    def add(num1, num2):
-      ans = num1 + num2
-      return ans
-    def subtract(num1, num2):
-      ans = num1 - num2
-      return ans
-    def multiply(num1, num2):
-      ans = num1 * num2
-      return ans  
-      
+
     #Numbers and function input by user
     num1 = input('Enter first number: ')
     num2 = input('Enter second number: ')
@@ -38,17 +27,24 @@ def partB():
       ans = multiply(num1, num2)
       print(ans)
     
-partB ()
+#Define Functions
+def add(num1, num2):
+      return = num1 + num2
+def subtract(num1, num2):
+      return = num1 - num2
+def multiply(num1, num2):
+      return = num1 * num2  
 
+#Define Calculator Loop
 def main():
+  partB ()
   while(True):
     again = raw_input("Sweet! Would you like to try again? ")
     
     if again.lower().startswith("y"):
       partB()
-    
     elif again.lower().startswith("n"):
       print("See you later!")
       exit()
-    
+
 main ()
